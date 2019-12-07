@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='it'>
+  <head>
+    <meta charset='utf-8'>
+
+    <meta name='viewport' content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+				   user-scalable=no" />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+
+    <meta name='description' content='Cineforum Lunik'>
+    <meta name='author' content='Associazione culturale Lunik'>
+
+    <title>Lunik</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src='particles.min.js'></script>
+    <script>particlesJS.load('particles-js', 'particles.json')</script>
+    
+  </head>
+  <body>
+    <div id='particles-js'></div>
+    <img id='moon' src='moon.svg' alt='Lunik' /> 
+    <br />
+    <svg id="banner">
+      <a xlink:href="" target="_blank">
+	<text text-anchor="middle" x="50%" y="100%">LUNIK</text>
+      </a>
+    </svg>
+    <div id='main'>
+      <p>
+	L'associazione culturale Lunik nasce con lo scopo Lunik e' il cineforum piu' migliore che
+	c'e', non so cos'altro scrivere. Questo e' un semplice testo che mi fa placeholder, con
+	virgole e punteggiature, in modo da sembrare tipograficamente convincibile. La mia fantastia
+	purtroppo e' limitata, ora scrivero' qualche numero tipo 2019 o 1945, direi che puo'
+	bastare.
+      </p>
+
+      <h1>Le prossime proiezioni</h1>
+      
+      <table>
+	{% for movie in movies %}
+	<tr>
+	  <td>
+	    <h2>{{ movie['title'] }}</h2>
+	    <h3>{{ movie['when'] }}</h3>
+	    <p>{{ movie['desc'] }}</p>
+	  </td>
+	  <td><img alt='{{ movie['title'] }}' src='{{ movie['image'] }}' /></td>
+	</tr>
+	{% endfor %}
+      </table>
+
+      <h1>Contatti</h1>
+      
+      <p>
+	{{ contacts }} Per qualsiasi informazione aggiuntiva puoi contattarci tramite
+	la <a href='http://www.facebook.com/'>nostra pagina Facebook</a> o direttamente alla nostra
+	e-mail <a href='mailto:contatti@lunik.it'>contatti@lunik.it</a>.
+	<br>
+	Le proiezioni hanno luogo presso la sede
+	della <a href='https://www.edifcernusco.it/'>Cooperativa Edificatrice Cernuschese</a>, ti
+	aspettiamo!
+      </p>
+
+      <iframe id='maps' src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ gmaps_place_id
+      }}&key={{ gmaps_key }}" allowfullscreen></iframe>
+      
+      <footer>
+	{{ footer }} 
+      </footer>
+    </div>
+    
+  </body>
+</html>
