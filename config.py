@@ -9,7 +9,7 @@ images_path = 'images'
 films_path = 'films.yaml'
 img_width = 1000
 email = 'contatti@lunik.it'
-facebook_page = 'https://www.facebook.com/'
+facebook_page = 'fb.me/cineforumlunik'
 intro = cleandoc("""
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a est sollicitudin, dictum mauris
 efficitur, luctus ex. Fusce iaculis, mi quis iaculis cursus, nibh arcu rutrum tortor, eget facilisis
