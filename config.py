@@ -1,5 +1,4 @@
 from datetime import date
-from credentials import *
 
 
 assets_path = 'assets'
@@ -52,6 +51,6 @@ protagonisti si scontrano e si mettono in discussione, trascende i dettami del f
 }]
 
 values = {'gmaps_place_id': 'ChIJ3b1qkdK3hkcRe7llxcKzCvM',
-          'gmaps_key': gmaps_key,
+          'gmaps_key': '',
           'movies': movies,
           'footer': f'Associazione culturale Lunik — Ultimo aggiornamento del {date.today().strftime("%d/%m/%Y")}'}

@@ -5,8 +5,6 @@ from os import mkdir
 import config
 import sys
 
-print(sys.version)
-'''
 rmtree(config.generated_path)
 mkdir(config.generated_path)
 
@@ -30,4 +28,3 @@ for f in ('soviet.woff',
 
 for movie in config.movies:
     copy(f'{config.images_path}/{movie["image"]}', config.generated_path)
-'''
