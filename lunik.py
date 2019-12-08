@@ -4,8 +4,6 @@ from jinja2 import Template
 from htmlmin import minify
 from shutil import copy, rmtree
 from os import mkdir
-from pathlib import Path
-from mimetypes import guess_type
 import config
 
 rmtree(config.generated_path)
@@ -20,7 +18,8 @@ with open(f'{config.generated_path}/index.html', 'w') as html_file:
 with open(f'{config.assets_path}/style.css', 'r') as css_file,\
      open(f'{config.generated_path}/style.css', 'w') as css_minified_file:
     css_minified_file.write(minify(css_file.read()))
-    
+
+
 for f in ('soviet.woff',
           'soviet.woff2',
           'particles.min.js',
