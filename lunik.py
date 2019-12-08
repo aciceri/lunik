@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from jinja2 import Template
 from htmlmin import minify
 from shutil import copy, rmtree
