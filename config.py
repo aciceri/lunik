@@ -3,7 +3,7 @@ from credentials import *
 
 
 assets_path = 'assets'
-generated_path = '_generated'
+generated_path = '_dist'
 images_path = 'images'
 
 movies = [{

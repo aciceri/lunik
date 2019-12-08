@@ -3,7 +3,6 @@
 from jinja2 import Template
 from htmlmin import minify
 from shutil import copy, rmtree
-from boto3 import client
 from os import mkdir
 from pathlib import Path
 from mimetypes import guess_type
@@ -31,14 +30,3 @@ for f in ('soviet.woff',
 
 for movie in config.movies:
     copy(f'{config.images_path}/{movie["image"]}', config.generated_path)
-
-aws_client = client('s3', aws_access_key_id=config.aws_access_key_id, aws_secret_access_key=config.aws_secret_access_key)
-
-print(f'Uploading files in {config.generated_path} to "{config.aws_bucket_name}" aws bucket')
-for f in Path(config.generated_path).rglob('*'):
-    print(str(f))
-    mimetype, _ = guess_type(f)
-    args = {'ACL': 'public-read'}
-    if mimetype:
-        args['ContentType'] = mimetype
-    aws_client.upload_file(str(f), config.aws_bucket_name, f.name, ExtraArgs=args)
