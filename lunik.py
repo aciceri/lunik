@@ -5,6 +5,9 @@ from htmlmin import minify
 from shutil import copy, rmtree
 from os import mkdir
 import config
+import sys
+
+print(sys.version)
 
 rmtree(config.generated_path)
 mkdir(config.generated_path)
