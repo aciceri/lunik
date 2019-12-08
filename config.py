@@ -1,5 +1,5 @@
 from datetime import date
-
+from os import environ
 
 assets_path = 'assets'
 generated_path = '_dist'
@@ -16,6 +16,15 @@ per il trentesimo compleanno di Uma Thurman, Kill Bill rimane ancora oggi una de
 del regista statunitense, il suo canto del cigno e la sua più grande dichiarazione d’amore per il
 cinema.
 '''
+    }, {
+    'title': 'El Topo',
+    'when': '23 Gennaio 2019 alle 21:00',
+    'image': 'eltopo.jpg',
+    'desc': '''
+I film più surrealisti e visionari raramente riescono a diventare grandi successi di pubblico, ma
+molti di questi nel tempo arrivano a diventar dei veri e propri cult movie, ed è proprio questo il
+caso di El Topo (1970) di Alejandro Jodorowski.
+'''    
     }, {
     'title': 'La corazzata Potemkin',
     'when': '15 Febbraio 2019 alle 21:00',
@@ -42,6 +51,6 @@ protagonisti si scontrano e si mettono in discussione, trascende i dettami del f
 }]
 
 values = {'gmaps_place_id': 'ChIJ3b1qkdK3hkcRe7llxcKzCvM',
-          'gmaps_key': '',
+          'gmaps_key': environ['GMAPS_KEY'],
           'movies': movies,
           'footer': f'Associazione culturale Lunik — Ultimo aggiornamento del {date.today().strftime("%d/%m/%Y")}'}
