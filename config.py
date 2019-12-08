@@ -17,15 +17,6 @@ del regista statunitense, il suo canto del cigno e la sua più grande dichiarazi
 cinema.
 '''
     }, {
-    'title': 'El Topo',
-    'when': '23 Gennaio 2019 alle 21:00',
-    'image': 'eltopo.jpg',
-    'desc': '''
-I film più surrealisti e visionari raramente riescono a diventare grandi successi di pubblico, ma
-molti di questi nel tempo arrivano a diventar dei veri e propri cult movie, ed è proprio questo il
-caso di El Topo (1970) di Alejandro Jodorowski.
-'''    
-    }, {
     'title': 'La corazzata Potemkin',
     'when': '15 Febbraio 2019 alle 21:00',
     'image': 'potemkin.jpg',
