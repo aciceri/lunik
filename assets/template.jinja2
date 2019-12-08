@@ -29,11 +29,7 @@
     </svg>
     <div id='main'>
       <p>
-	L'associazione culturale Lunik nasce con lo scopo Lunik e' il cineforum piu' migliore che
-	c'e', non so cos'altro scrivere. Questo e' un semplice testo che mi fa placeholder, con
-	virgole e punteggiature, in modo da sembrare tipograficamente convincibile. La mia fantastia
-	purtroppo e' limitata, ora scrivero' qualche numero tipo 2019 o 1945, direi che puo'
-	bastare.
+	{{ intro }}
       </p>
 
       <h1>Le prossime proiezioni</h1>
@@ -54,13 +50,7 @@
       <h1>Contatti</h1>
       
       <p>
-	{{ contacts }} Per qualsiasi informazione aggiuntiva puoi contattarci tramite
-	la <a href='http://www.facebook.com/'>nostra pagina Facebook</a> o direttamente alla nostra
-	e-mail <a href='mailto:contatti@lunik.it'>contatti@lunik.it</a>.
-	<br>
-	Le proiezioni hanno luogo presso la sede
-	della <a href='https://www.edifcernusco.it/'>Cooperativa Edificatrice Cernuschese</a>, ti
-	aspettiamo!
+	{{ contacts }}
       </p>
 
       <iframe id='maps' src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ gmaps_place_id

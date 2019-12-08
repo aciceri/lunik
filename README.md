@@ -9,3 +9,4 @@ images size (the images are automatically resized) or the footer text.
 The website is automatically deployed by [netlify](https://www.netlify.com) at every commit, however
 is possible to manually build it executing the `lunik.py` script.  Note that the script requires the
 environment variable `GMAPS_KEY` set, the actual value is set inside the control panel of netlify.
+
