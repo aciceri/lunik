@@ -36,3 +36,5 @@ for movie in config.movies:
     src = Image.open(f'{config.images_path}/{movie["image"]}')
     src.resize((config.img_width, int(config.img_width * src.height / src.width)))\
         .save(f'{config.generated_path}/{filename}.jpg')
+
+copy('_redirects', config.generated_path)
