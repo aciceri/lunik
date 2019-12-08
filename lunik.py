@@ -27,7 +27,8 @@ for f in ('soviet.woff',
           'soviet.woff2',
           'particles.min.js',
           'particles.json',
-          'moon.svg'):
+          'moon.svg',
+          'moon.ico'):
     copy(f'{config.assets_path}/{f}', config.generated_path)
 
 for movie in config.movies:
