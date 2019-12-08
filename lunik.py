@@ -1,11 +1,10 @@
 from jinja2 import Template
 from htmlmin import minify
-from shutil import copy, rmtree
+from shutil import copy
 from os import mkdir
 import config
 
 
-rmtree(config.generated_path)
 mkdir(config.generated_path)
 
 with open(f'{config.assets_path}/template.jinja2', 'r') as template_file:
