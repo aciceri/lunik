@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-#from jinja2 import Template
-#from htmlmin import minify
-#from shutil import copy, rmtree
-#from os import mkdir
-#import config
+from jinja2 import Template
+from htmlmin import minify
+from shutil import copy, rmtree
+from os import mkdir
+import config
 import sys
 
 print(sys.version)
