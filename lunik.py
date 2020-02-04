@@ -14,14 +14,13 @@ except FileNotFoundError:
 mkdir(config.generated_path)
 
 with open(f'{config.assets_path}/template.jinja2', 'r') as template_file,\
-     open(f'{config.generated_path}/index.html', 'w') as html_file:
+        open(f'{config.generated_path}/index.html', 'w') as html_file:
     template = jinjaTemplate(template_file.read())
     html_file.write(minify(template.render(config.values)))
 
 with open(f'{config.assets_path}/style.css', 'r') as css_file,\
-     open(f'{config.generated_path}/style.css', 'w') as css_minified_file:
+        open(f'{config.generated_path}/style.css', 'w') as css_minified_file:
     css_minified_file.write(minify(css_file.read()))
-
 
 for f in ('soviet.woff',
           'soviet.woff2',

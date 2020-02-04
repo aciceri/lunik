@@ -11,11 +11,10 @@ img_width = 1000
 email = 'contatti@lunik.it'
 facebook_page = 'http://fb.me/cineforumlunik'
 intro = cleandoc("""
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a est sollicitudin, dictum mauris
-efficitur, luctus ex. Fusce iaculis, mi quis iaculis cursus, nibh arcu rutrum tortor, eget facilisis
-mauris nisi eget tellus. Morbi tincidunt arcu eu sollicitudin dapibus. Aliquam sagittis risus quis
-neque suscipit auctor. Maecenas eu justo pharetra elit malesuada convallis sit amet vitae
-nunc. Nullam ipsum lorem, venenatis sed quam quis, luctus lacinia ipsum.
+Rinasce Lunik. Da Febbraio 2020 ritorna il cineforum storico di Cernusco, il quale si prefigge una entusiasmante
+stagione cinematografica riproponendo film d'autore e non, con l'obiettivo di far riscoprire della discussione.
+L'associazione culturale Lunik non è solo cinema, ma anche serie tv, fumetti, videogiochi e tanto altro.
+Il sogno di una generazione di ragazze e ragazzi ritorna.
 """)
 contacts = cleandoc(f"""
 Per qualsiasi informazione aggiuntiva puoi contattarci tramite la <a href='{facebook_page}'>nostra
