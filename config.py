@@ -9,7 +9,8 @@ images_path = 'images'
 films_path = 'films.yaml'
 img_width = 1000
 email = 'contatti@lunik.it'
-facebook_page = 'http://fb.me/cineforumlunik'
+facebook_page = 'https://fb.me/cineforumlunik'
+instagram_page = 'https://www.instagram.com/cineforumlunik'
 intro = cleandoc("""
 Rinasce Lunik. Da Febbraio 2020 ritorna il cineforum storico di Cernusco, il quale si prefigge una entusiasmante
 stagione cinematografica riproponendo film d'autore e non, con l'obiettivo di far riscoprire della discussione.
@@ -18,7 +19,8 @@ Il sogno di una generazione di ragazze e ragazzi ritorna.
 """)
 contacts = cleandoc(f"""
 Per qualsiasi informazione aggiuntiva puoi contattarci tramite la <a href='{facebook_page}'>nostra
-pagina Facebook</a> o direttamente alla nostra e-mail <a href='mailto:{email}'>{email}</a>.
+pagina Facebook</a>, <a href='{instagram_page}'>Instagram</a> o
+direttamente alla nostra e-mail <a href='mailto:{email}'>{email}</a>.
 <br>
 Le proiezioni hanno luogo presso la sede della <a href='https://www.edifcernusco.it/'>Cooperativa
 Edificatrice Cernuschese</a>, ti aspettiamo!
